@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-arena-950 text-chalk font-body;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display;
+}
+
+@layer components {
+  .panel {
+    @apply rounded-lg border border-arena-700 bg-arena-900 p-4 shadow-panel;
+  }
+
+  .panel-title {
+    @apply text-xs font-display font-semibold uppercase tracking-wide text-chalk/70;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs font-bold uppercase tracking-widest text-ball-yellow;
+  }
+
+  .btn {
+    @apply rounded-md px-4 py-2 text-sm font-medium transition-colors;
+  }
+
+  .btn-primary {
+    @apply btn bg-court text-chalk hover:bg-courtDark;
+  }
+
+  .btn-accent {
+    @apply btn bg-scoreboard text-arena-950 hover:brightness-110;
+  }
+
+  .btn-ghost {
+    @apply btn bg-arena-700 text-chalk/90 hover:bg-arena-600;
+  }
+
+  .btn-ghost-active {
+    @apply btn bg-ball-blue text-chalk;
+  }
+}
